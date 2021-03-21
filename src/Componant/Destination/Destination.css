@@ -1,0 +1,12 @@
+.destination-container {
+  display: flex;
+  margin-top: 20px;
+}
+.form-container {
+  width: 30%;
+  margin-left: 20px;
+  margin-right: 5px;
+  border-right: 1px solid lightcyan;
+  height: 300px;
+  align-items: center;
+}

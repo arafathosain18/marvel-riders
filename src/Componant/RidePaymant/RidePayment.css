@@ -1,0 +1,13 @@
+.search {
+  /* margin-left: 15px; */
+}
+.container {
+  display: flex;
+}
+.form-container {
+  width: 30%;
+  margin-left: 20px;
+  margin-right: 5px;
+  border-right: 1px solid lightcyan;
+  box-shadow: 1px 2px 3px 3px lightblue;
+}
