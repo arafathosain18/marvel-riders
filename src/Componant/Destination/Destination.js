@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import './Destination.css';
 import DestinationData from '../DestinationData/DestinationData.json';
 import RideLocation from '../RideLocation/RideLocation';
-import { useParams } from 'react-router';
 import image from '../../image/Map.png';
 
 
@@ -10,13 +9,13 @@ import image from '../../image/Map.png';
 
 
 const Destination = () => {
-    const {id} = useParams();
+
     const [vahicle, setVahicle] = useState([]);
     useEffect(() => {
         const url = DestinationData;
         setVahicle(url);
         console.log(url);
-    },[])
+    },[vahicle])
     
     return (
         <div className='destination-container'>
@@ -24,7 +23,7 @@ const Destination = () => {
                 <RideLocation></RideLocation>
             </div>
             <div className='map-container'>
-                <img style={{width:'70%', marginLeft:'120px'}} src={image} alt=""/>
+                <img style={{width:'70%', marginLeft:'15px'}} src={image} alt=""/>
             </div>
         </div>
     );

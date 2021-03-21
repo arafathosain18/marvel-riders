@@ -6,7 +6,6 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 import NoMatch from './Componant/NoMatch/NoMatch';
 import Destination from './Componant/Destination/Destination';
@@ -18,10 +17,9 @@ export const userContext= createContext();
 
 
 function App() {
-  const [loggedInUser,setLoggedInUser] = useState({});
+  const [loggedInUser, setLoggedInUser] = useState({});
   return (
     <userContext.Provider value={[loggedInUser, setLoggedInUser]}>
-      <p>{loggedInUser.email}</p>
             <Router>
               <Header></Header>
               <Switch>

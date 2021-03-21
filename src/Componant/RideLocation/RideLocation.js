@@ -1,12 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import RidePaymant from '../RidePaymant/RidePaymant';
 
 const handleRidePaymant =()=>{
-    console.log('h8uhy9jikol');
 }
-const RideLocation = (props) => {
-    // const {img, city1, city2} = props.vh;
+const RideLocation = () => {
     return (
         <div>
            <form action="">
